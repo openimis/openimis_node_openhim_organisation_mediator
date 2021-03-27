@@ -1,13 +1,11 @@
 'use strict'
 const koa = require('koa')
 const koaRouter = require('koa-router')
-const {DateTime} = require('luxon')
 const dotenv = require("dotenv");
 dotenv.config();
 const config = require('./config').getConfig();
 const logger = require('./logger')
 const openhim = require('./openhim')
-var request = require('request');
 var dataProcessor = require('./process');
 var deactivate = require('./deactivate');
 var bodyParser = require('koa-bodyparser');
