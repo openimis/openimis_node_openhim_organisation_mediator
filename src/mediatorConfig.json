@@ -1,0 +1,36 @@
+
+{
+    "urn": "Fhir 4 Organisation mediator",
+    "version": "1.0.0",
+    "name": "Fhir 4 organisation Mediator",
+    "description": "organisation mediator",
+    "defaultChannelConfig": [
+      {
+        "name": "organisation mediator",
+        "urlPattern": "^/Organisation",
+        "routes": [
+          {
+            "name": "organisation route",
+            "host": "localhost",
+            "path": "/",
+            "port": "3008",
+            "primary": true,
+            "type": "http"
+          }
+        ],
+        "allow": ["admin"],
+        "methods": ["GET", "POST","PUT","DELETE"],
+        "type": "http"
+      }
+    ],
+    "endpoints": [
+      {
+        "name": "organisation endpoint",
+        "host": "localhost",
+        "path": "/",
+        "port": "3008",
+        "primary": true,
+        "type": "http"
+      }
+    ]
+  }
